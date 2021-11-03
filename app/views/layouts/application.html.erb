@@ -16,6 +16,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+   <link href="app/assets/stylesheets/temp.css" media="screen" rel="stylesheet" />
+
     <% if Rails.configuration.google_analytics %>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="<%= google_analytics_url %>"></script>
@@ -23,7 +25,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', "<%= ENV["GOOGLE_ANALYTICS_TRACKING_ID"] %>");
       </script>
     <% end %>
@@ -32,7 +33,7 @@
     <meta property="og:title" content="<%= yield(:page_title).present? ? yield(:page_title) : t("bigbluebutton") %>" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content=<%=user_locale(@room&.owner)%> />
-    <meta property="og:description" content="<%= yield(:page_desc).present? ? yield(:page_desc) : t("landing.about", href: "Greenlight", locale: :en) %>" />
+    <meta property="og:description" content="<%= yield(:page_desc).present? ? yield(:page_desc) : t("landing.about", href: "Greenlight", locale: :fa_IR) %>" />
     <meta property="og:url" content="<%= request.base_url %>" />
     <meta property="og:image" content="<%= logo_image %>" />
     <meta name="viewport" content= "width=device-width, user-scalable=no">
@@ -58,6 +59,7 @@
       window.I18n = <%= current_translations.to_json.html_safe %>
       window.I18nFallback = <%= fallback_translations.to_json.html_safe %>
     </script>
+
   </head>
 
   <body class="app-background" data-controller="<%= controller_name %>" data-action="<%= action_name %>" data-relative-root="<%= Rails.configuration.relative_url_root || "/" %>">
@@ -69,7 +71,7 @@
           <div class="flash alert d-inline">
             <i class="fas fa-exclamation-triangle"></i>
             <p class="d-inline"><%= t("test_install",
-              href: link_to(t("docs").downcase, "http://docs.bigbluebutton.org/install/greenlight-v2.html#2-install-greenlight", target: "_blank", rel: "noopener")
+              href: link_to(t("docs").downcase, "https://k9090.ir/", target: "_blank", rel: "noopener")
             ).html_safe %>
           </div>
         </div>

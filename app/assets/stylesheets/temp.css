@@ -1,0 +1,6 @@
+form > input {
+    direction: rtl; !important;
+}
+div > h4 {
+    direction: rtl; !important;
+}

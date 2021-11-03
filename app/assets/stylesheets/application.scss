@@ -191,3 +191,83 @@ table {
 .nav-icon i {
   width: 35px;
 }
+.dropdown-item{
+  direction: ltr;
+  text-align: right;
+}
+.nav-tabs .nav-link:not(.active){
+  direction: ltr;
+}
+//.list-group-transparent .list-group-item {
+//  direction: rtl;
+//}
+.dropdown-toggle{
+  direction: ltr;
+}
+.text-left {
+  text-align: right!important;
+  direction: rtl;
+}
+.custom-switch-description{
+  margin-right: 0.5rem;
+}
+.list-group{
+  direction: ltr;
+  text-align: right;
+}
+.list-group-item.active{
+  direction: rtl;
+}
+//.list-group-item{
+//  direction: rtl;
+//}
+.nav-tabs .nav-link:not(.active) {
+  direction: ltr;
+}
+
+.nav-tabs .nav-link:not(.active) {
+  direction: ltr;
+}
+.nav-tabs .nav-link.active {
+  direction: ltr;
+}
+.form-control{
+  direction: rtl;
+}
+.card{
+  direction: rtl;
+}
+.pt-6{
+  padding-top: 2rem;
+  direction: rtl;
+}
+.list-group-item.active, .list-group-item.active .list-group-item.active * {
+  direction: ltr;
+}
+
+.list-group-transparent .list-group-item.active {
+  direction: rtl;
+}
+
+.list-group-transparent .list-group-item {
+  direction: rtl;
+}
+.col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+  direction: rtl;
+  text-align: right;
+}
+.col-lg-8 , .col-sm-12{
+  text-align: right;
+}
+.display-4 {
+  direction: rtl;
+  text-align: right;
+}
+a {
+  h4 {
+    text-align: right;
+  }
+}
+.mb-6, .my-6 {
+  text-align: right;
+}
